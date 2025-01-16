@@ -1,0 +1,99 @@
+:root{
+    --white: #fff;
+    --white-rgb: 255, 255, 255;
+    --black: #13151a;
+    --black-rgb: 19, 21, 26;
+    --gray: #a1a1a3;
+    --dark-gray: #717376;
+    --accent: #526aff;
+    --accent-rgb: 82, 106, 255;
+    --background-body: #13151a;
+    --red: #eb5151;
+    --orange: #ff6636;
+    --font-stack: monospace;
+    --font-stack-book: "Stolzl Book", "Roboto", Helvetica, Arial, sans-serif;
+}
+
+html{
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    font-family: var(--font-stack);
+    font-size: 16px;
+    background-color: var(--background-body);
+    color: var(--white);
+}
+
+body{
+    margin: 0;
+    margin-bottom: 4rem;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.text-center, .info > div{
+    text-align: center;
+}
+
+#root{
+    width: min(80%, 120ch);
+    margin-inline: auto;
+}
+
+.info{
+    margin-block: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+
+.images img{
+    width: 100%;
+}
+
+.subtitle{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+header > h4{
+    margin-block-end: 0;
+}
+
+header > h1{
+    margin-block: 1.5rem;
+}
+
+#contacts{
+    display: grid;
+    gap: 0.5rem;
+}
+
+a{
+    color: var(--white);
+}
+
+@media (width <= 800px) {
+    .images{
+        grid-template-columns: 1fr;
+    }
+
+    html{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
