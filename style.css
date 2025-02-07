@@ -88,6 +88,10 @@ a{
     color: var(--white);
 }
 
+iframe{
+    width: 600px;
+}
+
 @media (width <= 800px) {
     .images{
         grid-template-columns: 1fr;
@@ -98,5 +102,8 @@ a{
     }
     h1{
         font-size: 3rem;
+    }
+    iframe{
+        width: 100%;
     }
 }
